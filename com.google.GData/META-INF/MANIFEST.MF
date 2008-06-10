@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GData Plug-in
+Bundle-SymbolicName: com.google.GData;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.google.GData.Activator
+Bundle-Vendor: GOOGLE
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide,
+ org.eclipse.jdt.core,
+ org.eclipse.emf.codegen
+Eclipse-LazyStart: true
+Export-Package: com.google.GData;
+  uses:="org.eclipse.core.runtime,
+   org.eclipse.jface.resource,
+   org.eclipse.ui.plugin,
+   org.osgi.framework",
+ com.google.GData.ui;
+  uses:="org.eclipse.jface.wizard,
+   org.eclipse.core.runtime,
+   org.eclipse.ui,
+   org.eclipse.jface.viewers,
+   org.eclipse.ui.dialogs,
+   org.eclipse.swt.widgets"
+Bundle-ClassPath: gdataplugin.jar

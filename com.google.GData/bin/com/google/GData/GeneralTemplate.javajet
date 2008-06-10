@@ -1,0 +1,74 @@
+<%@ jet imports="java.util.* java.lang.String com.google.GData.FileTemplateConfig" skeleton="TemplateSkeleton.skeleton"%>
+<% FileTemplateConfig templateConfig = (FileTemplateConfig)argument1; %>
+<%String errorMessage = (String)argument2;%>
+<% if(errorMessage.length()>0){ %>
+/*<%=errorMessage%>*/
+<% } %>
+
+<% List<String> argsList = templateConfig.getArgs(); %>
+/* INSTRUCTION: This is a command line application. So please execute this template with the following arguments:
+
+<% for(int i=0;i<argsList.size();i++) { %>
+		arg[<%=i%>] = <%=argsList.get(i)%>
+<% } %>
+*/
+
+/**
+ * @author (Your Name Here)
+ *
+ */
+ 
+<% List<String> imports = templateConfig.getImports(); 
+	for(int i=0;i<imports.size();i++){ %>
+import <%=imports.get(i)%>;
+<%	} %>
+import com.google.gdata.util.AuthenticationException;
+import com.google.gdata.util.ServiceException;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+
+/**
+ * This is a test template
+ */
+
+  public class <%=templateConfig.getName().replace(" ","")%>{
+    
+    public static void main(String[] args){
+      
+      try{
+        
+        // Create a new <%=templateConfig.getName()%> service
+        <%=templateConfig.getServiceClass()%> myService = new <%=templateConfig.getServiceClass()%>(
+        <% if(templateConfig.getServiceClass().equals("GoogleService")) {%>
+        "<%=templateConfig.getName().toLowerCase()%>",<%}%>"My Application");
+        <% if(!templateConfig.getName().equals("Code Search") && !templateConfig.getName().equals("Notebook")){%>
+        myService.setUserCredentials(args[0],args[1]);<%}%>
+        
+        // Get a list of all your <%=templateConfig.getName()%>s
+        URL metafeedUrl = new URL("<%=templateConfig.getFeedUrl()%>");
+        System.out.println("Getting <%=templateConfig.getName()%> entries...\n");
+        <%=templateConfig.getFeedClass()%> resultFeed = myService.getFeed(metafeedUrl, <%=templateConfig.getFeedClass()%>.class);
+        List<<%=templateConfig.getEntryClass()%>> entries = resultFeed.getEntries();
+        for(int i=0; i<entries.size(); i++){
+          <%=templateConfig.getEntryClass()%> entry = entries.get(i);
+          System.out.println("\t" + entry.getTitle().getPlainText());
+        }
+        System.out.println("\nTotal Entries: "+entries.size());
+      }
+      catch(AuthenticationException e){
+        e.printStackTrace();
+      }
+      catch(MalformedURLException e){
+        e.printStackTrace();
+      }
+      catch(ServiceException e){
+        e.printStackTrace();
+      }
+      catch(IOException e){
+        e.printStackTrace();
+      }
+    }
+  }
