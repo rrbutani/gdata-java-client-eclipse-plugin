@@ -125,25 +125,23 @@ NAME CDATA #REQUIRED
     
     </THIRD_PARTY_DEPENDENCIES>
 
-		<DESCRIPTION>abcd</DESCRIPTION>
+		<DESCRIPTION>This template creates a console application which interacts with the Google Base Data API to retrieve first 25 Base Search results (if present) for a particular search query.</DESCRIPTION>
 
-		<FEED_URL>http://spreadsheets.google.com/feeds/spreadsheets/private/full</FEED_URL>
+		<FEED_URL>http://www.google.com/base/feeds/snippets?bq="+args[0]+"</FEED_URL>
 
 		<IMPORTS>
 
-			<IMPORT>com.google.gdata.client.spreadsheet.SpreadsheetService</IMPORT>
+			<IMPORT>com.google.api.gbase.client.GoogleBaseService</IMPORT>
 
-			<IMPORT>com.google.gdata.data.spreadsheet.SpreadsheetEntry</IMPORT>
+			<IMPORT>com.google.api.gbase.client.GoogleBaseEntry</IMPORT>
 
-			<IMPORT>com.google.gdata.data.spreadsheet.SpreadsheetFeed</IMPORT>
+			<IMPORT>com.google.api.gbase.client.GoogleBaseFeed</IMPORT>
 
 		</IMPORTS>
 
 		<ARGS>
 
-			<ARG></ARG>
-
-			<ARG></ARG>
+			<ARG>search query (If query contains space, replace space by %20. For e.g. : to search for &quot;Digital Camera&quot; the argument should be Digital%20Camera)</ARG>
 
 		</ARGS>
 
@@ -390,7 +388,7 @@ NAME CDATA #REQUIRED
 	</TEMPLATE>
 
 
-	<TEMPLATE NAME="Google Apps Provisioning">
+	<TEMPLATE NAME="Apps Provisioning">
 
 		<FILE_NAME>GeneralTemplate.javajet</FILE_NAME>
 
@@ -412,25 +410,27 @@ NAME CDATA #REQUIRED
     
     </THIRD_PARTY_DEPENDENCIES>
     
-		<DESCRIPTION>abcd</DESCRIPTION>
+		<DESCRIPTION>This template creates a console application which interacts with the Google Apps Provsioning Data API to retrieve first 100 users (if present) for a particular domain.</DESCRIPTION>
 
-		<FEED_URL>http://spreadsheets.google.com/feeds/spreadsheets/private/full</FEED_URL>
+		<FEED_URL>https://www.google.com/a/feeds/"+args[2]+"/user/2.0/</FEED_URL>
 
 		<IMPORTS>
 
-			<IMPORT>com.google.gdata.client.spreadsheet.SpreadsheetService</IMPORT>
+			<IMPORT>com.google.gdata.client.appsforyourdomain.UserService</IMPORT>
 
-			<IMPORT>com.google.gdata.data.spreadsheet.SpreadsheetEntry</IMPORT>
+			<IMPORT>com.google.gdata.data.appsforyourdomain.provisioning.UserEntry</IMPORT>
 
-			<IMPORT>com.google.gdata.data.spreadsheet.SpreadsheetFeed</IMPORT>
+			<IMPORT>com.google.gdata.data.appsforyourdomain.provisioning.UserFeed</IMPORT>
 
 		</IMPORTS>
 
 		<ARGS>
 
-			<ARG></ARG>
+			<ARG>admin-username@domain (E.g. liz@abcd.com)</ARG>
 
-			<ARG></ARG>
+			<ARG>admin-password</ARG>
+			
+			<ARG>domain (E.g. abcd.com)</ARG>
 
 		</ARGS>
 
@@ -459,7 +459,7 @@ NAME CDATA #REQUIRED
     
     </THIRD_PARTY_DEPENDENCIES>
 
-		<DESCRIPTION>This template creates a console application which interacts with the Google Code Search Data API to retrieve first ten Code Search results (if present) for a particular search query.</DESCRIPTION>
+		<DESCRIPTION>This template creates a console application which interacts with the Google Code Search Data API to retrieve first 10 Code Search results (if present) for a particular search query.</DESCRIPTION>
 
 		<FEED_URL>http://www.google.com/codesearch/feeds/search?q="+args[0]+"</FEED_URL>
 
@@ -475,7 +475,7 @@ NAME CDATA #REQUIRED
 
 		<ARGS>
 
-			<ARG>search query</ARG>
+			<ARG>search query (If query contains space, replace space by %20. For e.g. : to search for "Hello World" the argument should be Hello%20World)</ARG>
 
 		</ARGS>
 
@@ -551,27 +551,71 @@ NAME CDATA #REQUIRED
     
     </THIRD_PARTY_DEPENDENCIES>
 
-		<DESCRIPTION>abcd</DESCRIPTION>
+		<DESCRIPTION>This template creates a console application which interacts with the Google YouTube Data API to retrieve a list of first 25 YouTube favorite videos for a particular user.</DESCRIPTION>
 
-		<FEED_URL>http://spreadsheets.google.com/feeds/spreadsheets/private/full</FEED_URL>
+		<FEED_URL>http://gdata.youtube.com/feeds/api/users/"+args[0]+"/favorites</FEED_URL>
 
 		<IMPORTS>
 
-			<IMPORT>com.google.gdata.client.spreadsheet.SpreadsheetService</IMPORT>
+			<IMPORT>com.google.gdata.client.youtube.YouTubeService</IMPORT>
 
-			<IMPORT>com.google.gdata.data.spreadsheet.SpreadsheetEntry</IMPORT>
+			<IMPORT>com.google.gdata.data.youtube.VideoEntry</IMPORT>
 
-			<IMPORT>com.google.gdata.data.spreadsheet.SpreadsheetFeed</IMPORT>
+			<IMPORT>com.google.gdata.data.youtube.VideoFeed</IMPORT>
 
 		</IMPORTS>
 
 		<ARGS>
-
-			<ARG></ARG>
+		
+			<ARG>YouTube account username whose videos' list you want to see</ARG>
 
 		</ARGS>
 
 	</TEMPLATE>
+	
+	
+	<TEMPLATE NAME="Health">
+	
+		<FILE_NAME>GeneralTemplate.javajet</FILE_NAME>
+		
+		<DEPENDENCIES>
+		
+			<DEPENDENCY>^gdata\-health(\-meta)?\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
+			
+			<DEPENDENCY>^gdata\-core\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
+      
+      <DEPENDENCY>^gdata\-client(\-meta)?\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
+      
+      <DEPENDENCY>^gdata\-media\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
 
+    </DEPENDENCIES>
+    
+		<DEPENDENCY_COUNT>6</DEPENDENCY_COUNT>
+		
+		<THIRD_PARTY_DEPENDENCIES ISREQUIRED="False"></THIRD_PARTY_DEPENDENCIES>
+		
+		<DESCRIPTION>This template creates a console application which interacts with the Google Health Data API to retrieve a list of all Google Health profiles for a particular user.</DESCRIPTION>
+		
+		<FEED_URL>https://www.google.com/health/feeds/profile/list</FEED_URL>
+		
+		<IMPORTS>
+		
+			<IMPORT>com.google.gdata.client.GoogleService</IMPORT>
+			
+			<IMPORT>com.google.gdata.data.Entry</IMPORT>
+			
+			<IMPORT>com.google.gdata.data.Feed</IMPORT>
+			
+		</IMPORTS>
+			
+		<ARGS>
+		
+			<ARG>username</ARG>
+			
+			<ARG>password</ARG>
+		
+		</ARGS>
+
+	</TEMPLATE>
 
 </TEMPLATECOLLECTION>
