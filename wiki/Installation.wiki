@@ -6,8 +6,21 @@ The Google Data plug-in needs to be installed in Eclipse before you can use it. 
 
 = Installation Steps =
 
-  * *Step 1:* Go to Software Updates in Help menu and then click on Find and Install
+  * *Step 1:* Go to 'Software Updates' in 'Help' menu and then click on 'Find and Install'.
 
 http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/1.png
 
-  * *Step 2:*
+  * *Step 2:* Select 'Search for new features to install' and then press the 'Next' button.
+
+  * *Step 3:* Now on this page click on 'New Remote Site'.
+
+  * *Step 4:* In the popped up dialog, in place of 'Name' enter any name e.g. Google Data Plug-in and in place of 'URL' enter http://gdata-java-client-eclipse-plugin.googlecode.com/svn/update-site
+
+  * *Step 5:* Hope you can see the name you just entered in 'Sites to include in search' list. Make sure it is checked (if not check it) and press the 'Finish' button.
+  * *Step 6:* You will see a new dialog which will ask you to select the features which you want to install. So, select Google Data Plug-in (or the Name which you had typed in Step 4) and progress further by clicking on 'Next' button.
+
+  * *Step 7:* You will see the License page. Click on 'I accept the terms on license agreement' and then click on 'Next' button.
+
+  * *Step 8:* You will see a verification dialog. Just click 'Install All'.
+
+  * *Step 9:* After installation, an Eclipse restart dialog will be popped up. Just hit 'Yes' (if you want to..) and then you are all set to use the plug-in and create Google Data projects on the fly.
