@@ -8,11 +8,12 @@ The Google Data plug-in needs to be installed in Eclipse before you can use it. 
 
   * *Step 1:* Go to 'Software Updates' in 'Help' menu and then click on 'Find and Install'.
 
-http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/1.png
+  http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/1.png
 
   * *Step 2:* Select 'Search for new features to install' and then press the 'Next' button.
 
-http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/2.png
+  http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/2.png
+
 
   * *Step 3:* Now on this page click on 'New Remote Site'.
 
