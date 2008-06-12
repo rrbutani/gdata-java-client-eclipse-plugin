@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE EXTDEPENDENCIES [
+
+<!ELEMENT EXTDEPENDENCIES (JAR)*>
+
+<!ELEMENT JAR (URL)>
+
+<!ATTLIST JAR 
+
+NAME CDATA #REQUIRED
+
+>
+
+<!ELEMENT URL (#PCDATA)>
+
+]>
+
+<EXTDEPENDENCIES>
+
+  
+
+  <JAR NAME="Mail JAR">
+
+    <URL>http://download.java.net/maven/1/javax.mail/jars/mail-1.4.1.jar</URL>
+
+  </JAR>	
+
+
+
+  <JAR NAME="Activation JAR">
+
+    <URL>http://download.java.net/maven/1/javax.activation/jars/activation-1.1.1.jar</URL>
+
+  </JAR>	
+
+
+
+  <JAR NAME="Servlet API JAR">
+
+    <URL>http://download.java.net/maven/1/javax.servlet/jars/servlet-api-2.5.jar</URL>
+
+  </JAR>	
+
+
+
+</EXTDEPENDENCIES>
