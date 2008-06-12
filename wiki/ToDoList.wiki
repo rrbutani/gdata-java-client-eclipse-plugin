@@ -3,6 +3,3 @@
   * Resolve License issue for ext. dependencies being downloaded by the plug-in
   * Form a Google License after the first problem is resolved
   * Sign the jars
-
-
-http://code.google.com/images/code_sm.png
