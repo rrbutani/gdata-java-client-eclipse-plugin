@@ -3,3 +3,23 @@
 = Introduction =
 
 Add your feed back as comments on this page. After making changes according to your feedback I will remove this page before publishing the project.
+
+= Feedbacks =
+
+*Ryan*:
+
+Hi Kunal,
+
+I haven't had a chance to check this out yet, but for when we do go
+live with this, it'd be great if you could write a blog post.  Maybe
+we can even do a short video. I'm not sure how much publicity we gave
+the .NET project templates, but we might want to do a combined video?
+
+Lastly, we should update the Java client lib getting started guide and
+the eclipse article we have on codesite.
+
+Thanks much for your efforts to make it easier for developers to get
+started. Much appreciated.
+
+Cheers,
+Ryan
