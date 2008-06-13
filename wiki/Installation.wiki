@@ -6,7 +6,7 @@ The Google Data plug-in needs to be installed in Eclipse before you can use it. 
 
 = Pre-requisites =
 
-  * *JDK(Java Development Kit)* version 1.5+
+  * *JDK (Java Development Kit)* version 1.5+
   * *Eclipse* version 3.3+ and either of the following packages:
     * Eclipse IDE for Java Developers
     * Eclipse IDE for Java EE Developers
