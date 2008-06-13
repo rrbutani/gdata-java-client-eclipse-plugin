@@ -32,4 +32,4 @@ For demonstration purpose, we will create a new Google Documents template which 
 
   http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/WorkFlow/4.png
 
-  * *Step 7:* If you are a new Eclipse user, click [http://help.eclipse.org/help32/topic/org.eclipse.jdt.doc.user/tasks/tasks-executionArgs.htm here] to know how to execute the template as a command line application with arguments. 
+  * *Step 7:* If you are a new Eclipse user, click [http://help.eclipse.org/help32/topic/org.eclipse.jdt.doc.user/tasks/tasks-executionArgs.htm here] to know how to set execution arguments. 
