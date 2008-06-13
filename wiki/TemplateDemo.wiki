@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page demonstrates how to create a new Google Data template of your choice in few steps using the Google Data plug-in.
+This page demonstrates how to create a new Google Data template of your choice in a few steps using the Google Data plug-in.
 
 = Steps to create a new Google Data Template =
 
@@ -16,7 +16,7 @@ For demonstration purpose, we will create a new Google Documents template which 
 
   * *Step 3:* A Google Data Project wizard page will open up which will ask for some information to create a new Google Data Project.
 
-  http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/WorkFlow/3.png
+  http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/WorkFlow/2.png
     
   * *Step 4:* We will now enter appropriate information.
     * Enter a valid project name. Say: My Document Project
