@@ -1,4 +1,4 @@
-#summary Instuctions for plug-in installation
+#summary Instructions for plug-in installation
 
 = Introduction =
 
