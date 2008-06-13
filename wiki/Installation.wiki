@@ -28,7 +28,7 @@ The Google Data plug-in needs to be installed in Eclipse before you can use it. 
 
   http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/5.png
 
-  * *Step 7:* You will see the License page. Click on 'I accept the terms on license agreement' and then click on 'Next' button.
+  * *Step 7:* You will see the License page. Click on 'I accept the terms in the license agreement' and then click on 'Next' button.
 
   http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/6.png
 
