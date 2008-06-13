@@ -28,8 +28,6 @@ For demonstration purpose, we will create a new Google Documents template which 
 
   http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/WorkFlow/3.png
 
-  * *Step 6:* A new Java project is created in the workspace with the project name you provided. The Documents template named 'Documents.java' will be opened for editing. It will have instructions on how to execute it. All the required dependencies are referenced as 'Referenced Libraries'.
+  * *Step 6:* A new Java project is created in the workspace with the project name you provided. The Documents template named 'Documents.java' will be opened for editing. It will have instructions on how to execute it. All the required dependencies are referenced as 'Referenced Libraries'. If you are a new Eclipse user, click [http://help.eclipse.org/help32/topic/org.eclipse.jdt.doc.user/tasks/tasks-executionArgs.htm here] to know how to set execution arguments.
 
   http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/WorkFlow/4.png
-
-  * *Step 7:* If you are a new Eclipse user, click [http://help.eclipse.org/help32/topic/org.eclipse.jdt.doc.user/tasks/tasks-executionArgs.htm here] to know how to set execution arguments. 
