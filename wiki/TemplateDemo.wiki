@@ -6,7 +6,7 @@ This page demonstrates how to create a new Google Data template of your choice i
 
 = Steps to create a new Google Data Template =
 
-For demonstration purpose, we will create a new Google Documents template which uses the Google Docs API.
+For demonstration purpose, we will create a new Google Documents template which uses the Google Documents List Data API.
 
   * *Step 1:* Go to File --> New --> Others
 
