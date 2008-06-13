@@ -1,5 +1,8 @@
 #summary Things left to do.
 
-  * Resolve License issue for ext. dependencies being downloaded by the plug-in
+  * *Resolve License issue for ext. dependencies being downloaded by the plug-in
   * Form a Google License after the first problem is resolved
   * Sign the jars
+  * Update the GData Java client lib getting started guide
+  * Update the Eclipse article on the code site*
+  * Do a short video
