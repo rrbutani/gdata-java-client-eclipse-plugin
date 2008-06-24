@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+    
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.google.gdata"
+            name="Google Data">
+      </category>
+      <wizard
+            category="com.google.gdata"
+            class="com.google.gdata.devtools.eclipse.ui.NewProjectWizard"
+            descriptionImage="icons/icon.png"
+            icon="icons/icon.png"
+            id="com.google.gdata.ui.NewProjectWizard"
+            name="Google Data Project"
+            project="true">
+      </wizard>
+   </extension>
+   
+</plugin>
