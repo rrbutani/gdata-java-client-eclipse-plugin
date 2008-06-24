@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 
+<!-- Holds information about the external dependencies -->
+
 <!DOCTYPE EXTDEPENDENCIES [
 
 <!ELEMENT EXTDEPENDENCIES (JAR)*>
