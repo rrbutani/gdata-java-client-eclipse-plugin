@@ -1,4 +1,4 @@
-#summary How to add a new template?
+#summary How to add a new template to the existing ones?
 
 = Introduction =
 
