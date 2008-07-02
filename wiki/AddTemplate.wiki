@@ -1,0 +1,63 @@
+#summary How to add a new template?
+
+= Introduction =
+
+This page demonstrates how to add a new template to the list of existing ones.
+
+
+= Details =
+
+To add a new template to the existing ones, you just need to edit the templates.xml file. To see how it looks just click [http://gdata-java-client-eclipse-plugin.googlecode.com/svn/trunk/Google%20Data%20Plugin/src/com/google/gdata/devtools/eclipse/templates.xml here]. The xml blob structure (part of templates.xml) which you need to know is:
+
+{{{
+
+  <TEMPLATE NAME="Picasa Web Albums">
+
+    <FILE_NAME>GeneralTemplate.javajet</FILE_NAME>
+
+    <DEPENDENCIES>
+    
+      <DEPENDENCY>^gdata\-photos(\-meta)?\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
+      
+      <DEPENDENCY>^gdata\-core\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
+      
+      <DEPENDENCY>^gdata\-client(\-meta)?\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
+      
+      <DEPENDENCY>^gdata\-media\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
+      
+    </DEPENDENCIES>
+    
+    <DEPENDENCY_COUNT>6</DEPENDENCY_COUNT>
+
+    <EXT_DEPENDENCIES ISREQUIRED="True">
+    
+      <EXT_DEPENDENCY NAME="Activation.jar">^activation(\-[1-9](\.[0-9])?(\.[0-9])?)?\.jar$</EXT_DEPENDENCY>
+   
+      <EXT_DEPENDENCY NAME="Mail.jar">^mail(\-[1-9](\.[0-9])?(\.[0-9])?)?\.jar$</EXT_DEPENDENCY>
+    
+    </EXT_DEPENDENCIES>
+
+    <DESCRIPTION>This template creates a console application which interacts with the Picasa Web Album Data API to retrieve a list of all Albums for a particular user.</DESCRIPTION>
+
+    <FEED_URL>http://picasaweb.google.com/data/feed/api/user/"+args[0]+"?kind=album</FEED_URL>
+
+    <IMPORTS>
+
+      <IMPORT>com.google.gdata.client.photos.PicasawebService</IMPORT>
+
+      <IMPORT>com.google.gdata.data.photos.GphotoEntry</IMPORT>
+
+      <IMPORT>com.google.gdata.data.photos.UserFeed</IMPORT>
+
+    </IMPORTS>
+
+    <ARGS>
+
+      <ARG>username</ARG>
+
+      <ARG>password</ARG>
+
+    </ARGS>
+
+  </TEMPLATE>
+}}}
