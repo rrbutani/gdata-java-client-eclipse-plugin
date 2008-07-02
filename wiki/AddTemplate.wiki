@@ -51,7 +51,7 @@ To add a new template to the existing ones, you just need to edit the template c
 
     </IMPORTS>
 
-    <ARGS> <!-- Arguments required in order -->
+    <ARGS> <!-- Arguments required -->
 
       <ARG>username</ARG>
 
@@ -84,8 +84,14 @@ The use of most of the configuration elements is pretty straight forward. Only s
 <%String errorMessage = (String)argument2;%>
 }}}
 
-  * *DEPENDENCIES* - Regex of dependency files from GData Java Client Library. Note that these dependecies are the jar files from the GData Javca Client Library. Please do not include any external dependencies.
+  * *DEPENDENCIES* - Regex of dependency files from GData Java Client Library.
+  Note that these dependecies are the jar files from the GData Javca Client Library. Please do not include any external dependencies.
 
-  * *DEPENDENCY_COUNT* - Count of the the dependencies listed in the {{{DEPENDENCIES}}} element. Please note that this count is not just the count of {{{DEPENDENCY}}} elements. In our example, you can see that there are only 4 {{{DEPENDENCY}}} elements. But due to the regex pattern, you will have 6 dependencies referenced. So the value of {{{DEPENDENCY_COUNT}}} is 6.
+  * *DEPENDENCY_COUNT* - Count of the the dependencies listed in the {{{DEPENDENCIES}}} element.
+  Please note that this count is not just the count of {{{DEPENDENCY}}} elements. In our example, you can see that there are only 4 {{{DEPENDENCY}}} elements. But due to the regex pattern, you will have 6 dependencies referenced. So the value of {{{DEPENDENCY_COUNT}}} is 6.
 
-  * *EXT_DEPENDENCIES* - Regex of the external dependencies. Does this template require external dependencies? If yes, then set the {{{ISREQUIRED}}} attribute add in the regex of external dependencies as children. Else do not add the children
+  * *EXT_DEPENDENCIES* - Regex of the external dependencies.
+  Does this template require external dependencies? If yes, then set the {{{ISREQUIRED}}} attribute to {{{True}}} and set the regex of external dependencies as the value of the {{{EXT_DEPOENDENCY}}} elements. If no, then set the {{{ISREQUIRED}}} attribute to {{{False}}} and do not add {{{EXT_DEPENDENCY}}} children elements at all.
+
+  * *ARGS* - Arguments required
+  The value of {{{ARG}}} elements can be used as a part of execution instruction displayed to the user in the generated templates.
