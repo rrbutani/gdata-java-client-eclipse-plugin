@@ -13,7 +13,7 @@ To add a new template to the existing ones, you just need to edit the template c
 
   <TEMPLATE NAME="Picasa Web Albums"> <!-- Name of the template -->
 
-    <FILE_NAME>GeneralTemplate.javajet</FILE_NAME> <!-- JET template to be used -->
+    <FILE_NAME>GeneralTemplate.javajet</FILE_NAME> <!-- Name of JET template file to be used -->
 
     <DEPENDENCIES> <!-- Regex of dependency files from GData Java Client Library -->
     
@@ -64,7 +64,7 @@ To add a new template to the existing ones, you just need to edit the template c
 
 == Explanation ==
 
-The use of most of the configuration tags is pretty straight forward. Only some need to be addressed here.
+The use of most of the configuration elements is pretty straight forward. Only some need to be addressed here.
 
   * *FILE_NAME* - Name of the JET template file to be used. If a JET template file other than GeneralTemplate.javajet is used, please make sure to have the @jet directive attributes same as those in GeneralTemplate.javajet i.e.
 
@@ -83,3 +83,7 @@ The use of most of the configuration tags is pretty straight forward. Only some 
 <% FileTemplateConfig templateConfig = (FileTemplateConfig)argument1; %>
 <%String errorMessage = (String)argument2;%>
 }}}
+
+  * *DEPENDENCIES* - Regex of dependency files from GData Java Client Library. Note that these dependecies are the jar files from the GData Javca Client Library. Please do not include any external dependencies.
+
+  * *DEPENDENCY_COUNT* - Count of the the dependencies listed in the {{{DEPENDENCIES}}} element. Please note that this count is not just the count of {{{DEPENDENCY}}} elements. In our example, you can see that there are only 4 {{{DEPENDENCY}}} elements. But due to the regex pattern, you will have 6 dependencies referenced. So the value of {{{DEPENDENCY_COUNT}}} is 6.
