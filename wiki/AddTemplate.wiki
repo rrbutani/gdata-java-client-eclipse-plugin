@@ -11,11 +11,11 @@ To add a new template to the existing ones, you just need to edit the template c
 
 {{{
 
-  <TEMPLATE NAME="Picasa Web Albums"> <!---->
+  <TEMPLATE NAME="Picasa Web Albums"> <!-- Name of the template -->
 
-    <FILE_NAME>GeneralTemplate.javajet</FILE_NAME> <!---->
+    <FILE_NAME>GeneralTemplate.javajet</FILE_NAME> <!-- JET template to be used -->
 
-    <DEPENDENCIES> <!---->
+    <DEPENDENCIES> <!-- Regex of dependency files from GData Java Client Library -->
     
       <DEPENDENCY>^gdata\-photos(\-meta)?\-[1-9]\.[0-9](\.[0-9])?\.jar$</DEPENDENCY>
       
@@ -27,9 +27,9 @@ To add a new template to the existing ones, you just need to edit the template c
       
     </DEPENDENCIES>
     
-    <DEPENDENCY_COUNT>6</DEPENDENCY_COUNT> <!---->
+    <DEPENDENCY_COUNT>6</DEPENDENCY_COUNT> <!-- Count of the the dependencies listed above . You can see 4 but due to the regex there will be actually 6. -->
 
-    <EXT_DEPENDENCIES ISREQUIRED="True"> <!---->
+    <EXT_DEPENDENCIES ISREQUIRED="True"> <!-- Does this template require external dependencies? If "True", then add in the regex of external dependencies as children. Else do not add the children. -->
     
       <EXT_DEPENDENCY NAME="Activation.jar">^activation(\-[1-9](\.[0-9])?(\.[0-9])?)?\.jar$</EXT_DEPENDENCY>
    
@@ -37,11 +37,11 @@ To add a new template to the existing ones, you just need to edit the template c
     
     </EXT_DEPENDENCIES>
 
-    <DESCRIPTION>This template creates a console application which interacts with the Picasa Web Album Data API to retrieve a list of all Albums for a particular user.</DESCRIPTION> <!---->
+    <DESCRIPTION>This template creates a console application which interacts with the Picasa Web Album Data API to retrieve a list of all Albums for a particular user.</DESCRIPTION> <!-- Short description of what this tremplate does -->
 
-    <FEED_URL>http://picasaweb.google.com/data/feed/api/user/"+args[0]+"?kind=album</FEED_URL> <!---->
+    <FEED_URL>http://picasaweb.google.com/data/feed/api/user/"+args[0]+"?kind=album</FEED_URL> <!-- Feed URL to be used in the template -->
 
-    <IMPORTS> <!---->
+    <IMPORTS> <!-- Imports to be added in the template -->
 
       <IMPORT>com.google.gdata.client.photos.PicasawebService</IMPORT>
 
@@ -51,7 +51,7 @@ To add a new template to the existing ones, you just need to edit the template c
 
     </IMPORTS>
 
-    <ARGS> <!---->
+    <ARGS> <!-- Arguments required in order -->
 
       <ARG>username</ARG>
 
