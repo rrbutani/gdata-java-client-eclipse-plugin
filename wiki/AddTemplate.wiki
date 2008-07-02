@@ -67,7 +67,7 @@ To add a new template to the existing ones, you just need to edit the template c
 The use of most of the configuration elements is pretty straight forward. Only some need to be addressed here.
 
   * *FILE_NAME* - Name of the JET template file to be used.
-  If a JET template file other than GeneralTemplate.javajet is used, please make sure to have the @jet directive attributes same as those in GeneralTemplate.javajet i.e.
+  If a JET template file other than [http://gdata-java-client-eclipse-plugin.googlecode.com/svn/trunk/Google%20Data%20Plugin/src/com/google/gdata/devtools/eclipse/GeneralTemplate.javajet GeneralTemplate.javajet] is used, please make sure to have the @jet directive attributes same as those in [http://gdata-java-client-eclipse-plugin.googlecode.com/svn/trunk/Google%20Data%20Plugin/src/com/google/gdata/devtools/eclipse/GeneralTemplate.javajet GeneralTemplate.javajet i.e.
 
 {{{
 <%@ jet
@@ -78,7 +78,7 @@ The use of most of the configuration elements is pretty straight forward. Only s
 }}}
 
   You can add more {{{imports}}} if needed.
-  Also, please note that the GeneralTemplate.javajet takes in two arguments. Please make sure that the JET template file which you are adding takes in those two arguments (then it's upto you whether you want to use them in the template or not). They are shown below.
+  Also, please note that the [http://gdata-java-client-eclipse-plugin.googlecode.com/svn/trunk/Google%20Data%20Plugin/src/com/google/gdata/devtools/eclipse/GeneralTemplate.javajet GeneralTemplate.javajet takes in two arguments. Please make sure that the JET template file which you are adding takes in those two arguments (then it's upto you whether you want to use them in the template or not). They are shown below.
 
 {{{
 <% FileTemplateConfig templateConfig = (FileTemplateConfig)argument1; %>
