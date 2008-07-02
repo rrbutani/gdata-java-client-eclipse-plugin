@@ -7,7 +7,7 @@ This page demonstrates how to add a new template to the list of existing ones.
 
 = Details =
 
-To add a new template to the existing ones, you just need to edit the template configuration file. To see how it looks just click [http://gdata-java-client-eclipse-plugin.googlecode.com/svn/trunk/Google%20Data%20Plugin/src/com/google/gdata/devtools/eclipse/templates.xml here]. The xml blob structure (part of templates.xml) which you need to know is below. It is illustrated using the configuration for Picasa Web Album template as an example. 
+To add a new template to the existing ones, you just need to edit the template configuration file. To see how it looks just click [http://gdata-java-client-eclipse-plugin.googlecode.com/svn/trunk/Google%20Data%20Plugin/src/com/google/gdata/devtools/eclipse/templates.xml here]. The xml blob structure (part of the template configuration file) which you need to understand is below. It is illustrated using the configuration for Picasa Web Album template as an example. 
 
 {{{
 
