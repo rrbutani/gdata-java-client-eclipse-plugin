@@ -66,7 +66,8 @@ To add a new template to the existing ones, you just need to edit the template c
 
 The use of most of the configuration elements is pretty straight forward. Only some need to be addressed here.
 
-  * *FILE_NAME* - Name of the JET template file to be used. If a JET template file other than GeneralTemplate.javajet is used, please make sure to have the @jet directive attributes same as those in GeneralTemplate.javajet i.e.
+  * *FILE_NAME* - Name of the JET template file to be used.
+  If a JET template file other than GeneralTemplate.javajet is used, please make sure to have the @jet directive attributes same as those in GeneralTemplate.javajet i.e.
 
 {{{
 <%@ jet
