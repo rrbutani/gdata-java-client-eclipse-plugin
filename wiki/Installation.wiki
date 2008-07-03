@@ -1,4 +1,5 @@
 #summary Instructions for plug-in installation
+#labels Featured
 
 = Introduction =
 
