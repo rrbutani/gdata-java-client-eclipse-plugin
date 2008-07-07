@@ -8,11 +8,13 @@ The Google Data plug-in needs to be installed in Eclipse before you can use it. 
 = Pre-requisites =
 
   * *JDK (Java Development Kit)* version 1.5+
-  * *Eclipse* version 3.3+ and either of the following packages:
+  * *Eclipse* version 3.3.x and either of the following packages:
     * Eclipse IDE for Java Developers
     * Eclipse IDE for Java EE Developers
     * Eclipse for RCP/Plug-in Developers
     * Eclipse Classic
+    
+    *NOTE:* This plug-in is not yet compatible with Eclipse Ganymede packages.
   * *GData Java Client library* version any. If you want to use the Google Health template, then required version is 1.17.0+ . You can download a latest archive from [http://code.google.com/p/gdata-java-client/downloads/list here].
 
 = Plug-in Installation Steps =
