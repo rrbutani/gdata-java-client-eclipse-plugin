@@ -2,5 +2,5 @@
 <site>
    <feature url="features/org.eclipse.emf.codegen_2.3.0.v200706262000.jar" id="org.eclipse.emf.codegen" version="2.3.0.v200706262000"/>
    <feature url="features/org.eclipse.emf.common_2.3.0.v200706262000.jar" id="org.eclipse.emf.common" version="2.3.0.v200706262000"/>
-   <feature url="http://code.google.com/p/gdata-java-client-eclipse-plugin/downloads/list/com.google.gdata.feature_1.0.0.jar" id="com.google.gdata.feature" version="1.0.0"/>
+   <feature url="http://gdata-java-client-eclipse-plugin.googlecode.com/files/com.google.gdata.feature_1.0.0.jar" id="com.google.gdata.feature" version="1.0.0"/>
 </site>
