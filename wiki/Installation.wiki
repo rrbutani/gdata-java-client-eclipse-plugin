@@ -21,6 +21,8 @@ The Google Data plug-in needs to be installed in Eclipse before you can use it. 
 
 = Plug-in Installation Steps =
 
+*NOTE:* Installation Steps for Eclipse Ganymede packages differ slightly from the ones shown below.
+
   * *Step 1:* Start Eclipse. Go to 'Software Updates' in 'Help' menu and then click on 'Find and Install'.
 
   http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/Installation/1.png
