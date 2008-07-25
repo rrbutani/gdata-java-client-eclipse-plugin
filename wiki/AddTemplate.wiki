@@ -71,9 +71,9 @@ The use of most of the configuration elements is pretty straight forward. Only s
 
 {{{
 <%@ jet
-    class = "TemporaryTemplateCreator" 
-	 imports="java.util.* com.google.gdata.devtools.eclipse.FileTemplateConfig" 
-	 skeleton="TemplateSkeleton.skeleton"
+    class = "TemporaryTemplateCreator"  
+    imports="java.util.* com.google.gdata.devtools.eclipse.FileTemplateConfig"
+    skeleton="TemplateSkeleton.skeleton"
 %>
 }}}
 
