@@ -27,15 +27,17 @@ http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/ProjectFrmSrc/
 
 http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/ProjectFrmSrc/3.png
 
-*Step 5:* Now, after the project is created, right-click on the project folder named 'Google_Data_Plugin' (if that's what you have named the project) in the 'Package Explorer' and click on 'Import' as shown below.
+*Step 5:* You may be asked if you want to open the 'Plug-in Perspective'. If so, hit 'Yes'.
+
+*Step 6:* Now, after the project is created, right-click on the project folder named 'Google_Data_Plugin' (if that's what you have named the project) in the 'Package Explorer' and click on 'Import' as shown below.
 
 http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/ProjectFrmSrc/4.png
 
-*Step 6:* On this page, expand the folder named 'General' and select 'File System' as shown below and then hit 'Next'.
+*Step 7:* On this page, expand the folder named 'General' and select 'File System' as shown below and then hit 'Next'.
 
 http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/ProjectFrmSrc/5.png
 
-*Step 7:* 
+*Step 8:* 
 
   * For the first directory field, hit on the 'Browse' button to browse upto $HOME/gdata-java-client-eclipse-plugin/, select folder named 'Google Data Plugin' and hit OK.
   * Now, check 'Google Data Plugin' as shown in the picture below.
@@ -43,8 +45,6 @@ http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/ProjectFrmSrc/
   * Hit 'Finish'.
  
 http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/ProjectFrmSrc/6.png
-
-*Step 8:* You may be asked if you want to open the 'Plug-in Perspective'. If so, hit 'Yes'.
 
 *Step 9:* Now the plug-in project is created in Eclipse. To run it as a plug-in, right-click on the project folder in the 'Package Explorer' and go to Run As --> Eclipse Application. A new instance of Eclipse will be opened and you can test the plug-in there.
 
