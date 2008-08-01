@@ -1,0 +1,12 @@
+#summary Create plug-in project from source code
+= Introduction =
+
+This page lists out the instructions on how to create the Eclipse plug-in project using the source code in the [http://code.google.com/p/gdata-java-client-eclipse-plugin/source/browse/#svn project svn] for working on it.
+
+= Instructions =
+
+Note: Following instructions are 
+
+*Step 1:* Checkout the project source as mentioned in the [http://code.google.com/p/gdata-java-client-eclipse-plugin/source/checkout source tab].
+
+*Step 2:* 
