@@ -9,11 +9,11 @@ Note: Following instructions are for Eclipse v3.3.2. For other versions, they ma
 
 *Step 1:* Checkout the project source as mentioned in the [http://code.google.com/p/gdata-java-client-eclipse-plugin/source/checkout source tab]. Let's say you checked the source out to $HOME/gdata-java-client-eclipse-plugin.
 
-*Step 2:* Now, open Eclipse. Go to File --> New --> Project. You can see the following window. In that look out for 'Plug-in Project'. Select 'Plug-in Project' and click on 'Next' button. You can see the following window.
+*Step 2:* Now, open Eclipse. Go to File --> New --> Project. You can see the following window. In that look out for 'Plug-in Project'. Select 'Plug-in Project' and click on 'Next' button.
 
 http://gdata-java-client-eclipse-plugin.googlecode.com/svn/images/ProjectFrmSrc/1.png
 
-*Step 3:* In this window enter appropriate information. 
+*Step 3:* In the window which appears, we need to enter appropriate information. 
   
   * Project name: Let's say 'Google_Data_Plugin'.
   * Project settings: Make sure they look the same as in the picture below i.e. 'Create a Java Project' should be checked, the 'Source folder' should say 'src' and 'Output folder' can be named anything you like but 'bin' is more appropriate.
