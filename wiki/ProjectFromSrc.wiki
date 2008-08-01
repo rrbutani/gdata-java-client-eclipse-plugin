@@ -1,7 +1,7 @@
 #summary Create plug-in project from source code
 = Introduction =
 
-This page lists out the instructions on how to create the Eclipse plug-in project using the source code in the [http://code.google.com/p/gdata-java-client-eclipse-plugin/source/browse/#svn project svn] for working on it.
+This page lists out the instructions on how to create the Eclipse plug-in project using the source code in the [http://code.google.com/p/gdata-java-client-eclipse-plugin/source/browse/#svn project svn] for working on it. Just follow the 10 step procedure to start playing with it.
 
 = Instructions =
 
@@ -19,9 +19,9 @@ pic2
 
 *Step 4:* In this window enter appropriate information. 
   
-  *Project name: Let's say 'Google Data Plugin'.
-  *Project settings: Make sure they look the same as in the picture below i.e. 'Create a Java Project' should be checked, the 'Source folder' should say 'src' and 'Output folder' can be named anything you like but 'bin' is more appropriate.
-  *Target Platform: 'Eclipse version' should be checked and value should be '3.3' or above.
+  * Project name: Let's say 'Google Data Plugin'.
+  * Project settings: Make sure they look the same as in the picture below i.e. 'Create a Java Project' should be checked, the 'Source folder' should say 'src' and 'Output folder' can be named anything you like but 'bin' is more appropriate.
+  * Target Platform: 'Eclipse version' should be checked and value should be '3.3' or above.
 
 Now, hit 'Next'.
 
@@ -31,7 +31,7 @@ pic3
 
 pic4
 
-*Step 6:* Now, after the project is created, right-click on the project folder Google Data Plugin (if that's what you have named the project) and click on 'Import' as shown below.
+*Step 6:* Now, after the project is created, right-click on the project folder Google Data Plugin (if that's what you have named the project) in the 'Package Explorer' and click on 'Import' as shown below.
 
 pic5
 
@@ -41,6 +41,15 @@ pic6
 
 *Step 8:* 
 
-  *For the first directory field, hit on the 'Browse' button to browse upto $HOME/gdata-java-client-eclipse-plugin/, select folder named 'Google Data Plugin' and hit OK.
-  *Now, check 'Google Data Plugin' as shown in the picture below.
-  *Let's jump to options. In 'Options'
+  * For the first directory field, hit on the 'Browse' button to browse upto $HOME/gdata-java-client-eclipse-plugin/, select folder named 'Google Data Plugin' and hit OK.
+  * Now, check 'Google Data Plugin' as shown in the picture below.
+  * Let's jump to options. In 'Options', check 'Overwrite exisitng resources without warning' and 'Create selected folders only'.
+  * Hit 'Finish'.
+ 
+pic7
+
+*Step 9:* You may be asked if you want to open the 'Plug-in Perspective'. If so, hit 'Yes'.
+
+*Step 10:* Now the plug-in project is created in Eclipse. To run it as a plug-in, right-click on the project folder in the 'Package Explorer' and go to Run As --> Eclipse Application. A new instance of Eclipse will be opened and you can test the plug-in there.
+
+Now, you are ready to work on the plug-in your way. Good luck!
