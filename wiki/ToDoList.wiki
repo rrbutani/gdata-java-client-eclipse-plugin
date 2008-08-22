@@ -1,6 +1,5 @@
 #summary Things left to do (Descending priorities from top to bottom).
 
-  * Do a short video
   * Sign the jars
   * Update the GData Java client lib getting started guide
   * Update the Eclipse article on the code site
