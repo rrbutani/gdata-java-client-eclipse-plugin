@@ -88,7 +88,7 @@ The use of most of the configuration elements is pretty straight forward. Only s
   * *DEPENDENCIES* - Regex of dependency files from GData Java Client Library.
   Note that these dependecies are the jar files from the GData Java Client Library. Please do not include any external dependencies.
 
-  * *DEPENDENCY_COUNT* - Count of the the dependencies listed in the {{{DEPENDENCIES}}} element.
+  * *DEPENDENCY_COUNT* - Count of the dependencies listed in the {{{DEPENDENCIES}}} element.
   Please note that this count is not just the count of {{{DEPENDENCY}}} elements. In our example, you can see that there are only 4 {{{DEPENDENCY}}} elements. But due to the regex pattern, you will have 6 dependencies referenced. So the value of {{{DEPENDENCY_COUNT}}} is 6.
 
   * *EXT_DEPENDENCIES* - Regex of the external dependencies.
